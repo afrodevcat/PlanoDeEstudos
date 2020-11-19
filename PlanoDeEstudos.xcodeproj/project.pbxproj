@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		22832AD825672063002772FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22832AD725672063002772FA /* AppDelegate.swift */; };
-		22832ADA25672063002772FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22832AD925672063002772FA /* SceneDelegate.swift */; };
-		22832ADC25672063002772FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22832ADB25672063002772FA /* ViewController.swift */; };
 		22832ADF25672063002772FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22832ADD25672063002772FA /* Main.storyboard */; };
 		22832AE125672068002772FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22832AE025672068002772FA /* Assets.xcassets */; };
 		22832AE425672068002772FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22832AE225672068002772FA /* LaunchScreen.storyboard */; };
+		22832AEC2567208F002772FA /* StudyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22832AEB2567208F002772FA /* StudyManager.swift */; };
+		22832AEE2567209A002772FA /* StudyPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22832AED2567209A002772FA /* StudyPlan.swift */; };
+		22832AF0256720F5002772FA /* StudyPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22832AEF256720F5002772FA /* StudyPlanViewController.swift */; };
+		22832AF22567210E002772FA /* StudyPlansTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22832AF12567210D002772FA /* StudyPlansTableViewController.swift */; };
+		22832AF42567217E002772FA /* sonic.caf in Resources */ = {isa = PBXBuildFile; fileRef = 22832AF32567217E002772FA /* sonic.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22832AD425672063002772FA /* PlanoDeEstudos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanoDeEstudos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22832AD725672063002772FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22832AD925672063002772FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		22832ADB25672063002772FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22832ADE25672063002772FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22832AE025672068002772FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22832AE325672068002772FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22832AE525672068002772FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22832AEB2567208F002772FA /* StudyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyManager.swift; sourceTree = "<group>"; };
+		22832AED2567209A002772FA /* StudyPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyPlan.swift; sourceTree = "<group>"; };
+		22832AEF256720F5002772FA /* StudyPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyPlanViewController.swift; sourceTree = "<group>"; };
+		22832AF12567210D002772FA /* StudyPlansTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyPlansTableViewController.swift; sourceTree = "<group>"; };
+		22832AF32567217E002772FA /* sonic.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sonic.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				22832AD725672063002772FA /* AppDelegate.swift */,
-				22832AD925672063002772FA /* SceneDelegate.swift */,
-				22832ADB25672063002772FA /* ViewController.swift */,
+				22832AEF256720F5002772FA /* StudyPlanViewController.swift */,
+				22832AF12567210D002772FA /* StudyPlansTableViewController.swift */,
+				22832AED2567209A002772FA /* StudyPlan.swift */,
+				22832AEB2567208F002772FA /* StudyManager.swift */,
+				22832AF32567217E002772FA /* sonic.caf */,
 				22832ADD25672063002772FA /* Main.storyboard */,
 				22832AE025672068002772FA /* Assets.xcassets */,
 				22832AE225672068002772FA /* LaunchScreen.storyboard */,
@@ -126,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22832AE425672068002772FA /* LaunchScreen.storyboard in Resources */,
+				22832AF42567217E002772FA /* sonic.caf in Resources */,
 				22832AE125672068002772FA /* Assets.xcassets in Resources */,
 				22832ADF25672063002772FA /* Main.storyboard in Resources */,
 			);
@@ -138,9 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22832ADC25672063002772FA /* ViewController.swift in Sources */,
+				22832AF0256720F5002772FA /* StudyPlanViewController.swift in Sources */,
+				22832AEE2567209A002772FA /* StudyPlan.swift in Sources */,
+				22832AEC2567208F002772FA /* StudyManager.swift in Sources */,
+				22832AF22567210E002772FA /* StudyPlansTableViewController.swift in Sources */,
 				22832AD825672063002772FA /* AppDelegate.swift in Sources */,
-				22832ADA25672063002772FA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
