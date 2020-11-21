@@ -13,10 +13,15 @@ class StudyPlansTableViewController: UITableViewController {
     // MARK: - Super Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(onConfirmed), name: NSNotification.Name(rawValue: "confirmed"), object: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
+    @objc func onConfirmed() {
         tableView.reloadData()
     }
     
